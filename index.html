@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- GENERAL INFO -->
+    <title>Pinapple Audio Player</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+    <!-- BOT INFO -->
+    <meta name="robots" content="index,follow">
+    <meta name="googlebot" content="index,follow">
+    <!-- LINKS TO CSS FILE ("STYLESHEET") AND SITE ICON -->
+    <script src="https://kit.fontawesome.com/1678e6ad64.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/assets/css/style.css">
+     <!-- FACEBOOK METADATA -->
+     <!-- TWITTER METADATA -->
+</head>
+<body>
+    <div class="bg"></div>
+    <div class="player">
+        <h2 class="player-brand">pinapple music</h2>
+        <div class="details">
+          <div class="now-playing">Sounds x of y</div>
+          <div class="track-art"></div>
+          <div class="track-name">Track Name</div>
+          <div class="track-artist">Track Artist</div>
+        </div>
+        <div class="buttons">
+          <div class="prev-track" onclick="prevTrack()"><i class="fa fa-step-backward fa-2x"></i></div>
+          <div class="playpause-track" onclick="playpauseTrack()"><i class="fa fa-play-circle fa-5x"></i></div>
+          <div class="next-track" onclick="nextTrack()"><i class="fa fa-step-forward fa-2x"></i></div>
+        </div>
+        <div class="slider_container">
+          <div class="current-time">00:00</div>
+          <input type="range" min="1" max="100" value="0" class="seek_slider" onchange="seekTo()">
+          <div class="total-duration">00:00</div>
+        </div>
+        <div class="slider_container">
+          <i class="fa fa-volume-down"></i>
+          <input type="range" min="0" max="100" value="99" class="volume_slider" onchange="setVolume()">
+          <i class="fa fa-volume-up"></i>
+        </div>
+        <p class="copy">&#169;copyright Daniel Iuliano 2021</p>
+    </div>
+    <!-- LINKS TO JS FILES --> 
+<script src="/assets/js/main.js"></script>    
+</body>
+</html>
